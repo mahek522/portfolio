@@ -648,7 +648,7 @@ body {
         object-fit: contain;
     }
 
-    /* Ensure Global Video Stays Fixed */
+    /* Ensure Global Video Stays Fixed & Fits */
     .global-bg-video {
         position: fixed;
         top: 0;
@@ -656,12 +656,52 @@ body {
         width: 100vw;
         height: 100vh;
         z-index: -10;
-        object-fit: cover;
+        object-fit: fill;
+        /* Stretch to fill screen as requested */
     }
 
     /* Navbar Adjustments */
     .navbar {
         padding: 0.5rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* Hamburger Visibility Fix - Absolute Position to Guarantee View */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+        z-index: 2000;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid var(--color-tertiary);
+        border-radius: 5px;
+    }
+
+    .bar {
+        background-color: var(--color-tertiary);
+        /* Neon Cyan */
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        display: block;
+    }
+
+    /* Adjust Logo to Left */
+    .nav-container {
+        padding: 0 1.5rem;
+        position: relative;
+        /* Context for hamburger */
+        height: 50px;
+        /* Explicit height for alignment */
+        display: flex;
+        align-items: center;
     }
 
     /* Logo Toggling */
