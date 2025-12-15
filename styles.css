@@ -628,6 +628,24 @@ body {
     }
 }
 
+/* ===== Global Element Defaults ===== */
+.hamburger {
+    display: none;
+    /* Hidden on Desktop by default */
+}
+
+/* Global Video - Fixed and Cover (Standard) */
+.global-bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    object-fit: cover;
+    /* Cover is best for backgrounds */
+}
+
 /* ===== Responsive Design ===== */
 /* ... (previous responsive queries) */
 @media (max-width: 768px) {
@@ -836,19 +854,4 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-}
-
-/* Hamburger Styles (Default Hidden) */
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--color-light);
 }
