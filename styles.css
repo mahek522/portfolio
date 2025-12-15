@@ -627,18 +627,37 @@ body {
     /* Video Responsiveness */
     .video-container-top {
         height: auto;
-        /* Allow container to shrink to video height */
-        min-height: 40vh;
+        min-height: 30vh;
         background: #000;
+        margin-top: 55px;
+        /* Push below navbar */
     }
 
     .hero-video-top {
         position: relative;
-        /* Remove absolute positioning */
         height: auto;
         width: 100%;
         object-fit: contain;
-        /* Ensure full video is visible */
+    }
+
+    /* Ensure Global Video Stays Fixed */
+    .global-bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -10;
+        object-fit: cover;
+    }
+
+    /* Navbar Adjustments */
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .nav-logo {
+        font-size: 1.1rem;
     }
 
     .nav-menu {
