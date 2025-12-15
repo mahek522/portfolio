@@ -674,8 +674,8 @@ body {
         width: 100vw;
         height: 100vh;
         z-index: -10;
-        object-fit: fill;
-        /* Stretch to fill screen as requested */
+        object-fit: cover;
+        /* Cover is best, fill distorts */
     }
 
     /* Navbar Adjustments */
@@ -685,17 +685,19 @@ body {
         width: 100%;
         top: 0;
         z-index: 1000;
+        background: rgba(4, 12, 16, 0.95);
     }
 
     /* Hamburger Visibility Fix - Absolute Position to Guarantee View */
     .hamburger {
-        display: block;
+        display: block !important;
+        /* Force */
         cursor: pointer;
         position: absolute;
         top: 50%;
         right: 1.5rem;
         transform: translateY(-50%);
-        z-index: 2000;
+        z-index: 2005;
         padding: 10px;
         background: rgba(0, 0, 0, 0.6);
         border: 1px solid var(--color-tertiary);
@@ -745,19 +747,7 @@ body {
         /* Ensure space on sides */
     }
 
-    /* Hamburger Visibility Fix */
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-        z-index: 1001;
-        /* Ensure above everything */
-        border: 1px solid var(--color-tertiary);
-        /* Outline to make it pop */
-        border-radius: 5px;
-        background: rgba(0, 0, 0, 0.5);
-        /* Background to ensure contrast against video */
-    }
+
 
     .bar {
         background-color: var(--color-tertiary);
