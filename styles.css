@@ -666,11 +666,11 @@ body {
 
     /* Logo Toggling */
     .desktop-logo {
-        display: none;
+        display: none !important;
     }
 
     .mobile-logo {
-        display: block;
+        display: block !important;
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--color-tertiary);
