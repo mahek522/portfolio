@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahek Sultana - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Video Section (100% Height) -->
+    <div id="home" class="video-container-top">
+        <video class="hero-video-top" autoplay loop muted playsinline>
+            <source src="Black and Blue Neon Technology Video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Hero Content Section -->
+    <section class="hero-content-section">
+        <div class="hero-content-wrapper">
+            <h1 class="hero-title">Mahek Sultana</h1>
+            <h2 class="hero-subtitle">Full Stack Developer</h2>
+            <p class="hero-description">Passionate about creating innovative digital solutions and bringing ideas to
+                life through code</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Mahek Sultana</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://drive.google.com/uc?export=download&id=1e-D7t99irJ2PaQ8zrRC8rAsxNCAcCSF4"
+                        class="resume-btn" download>Download Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Who I Am</h3>
+                        <p>I am a passionate, results-driven, and adaptive Full-Stack Developer with a solid grounding
+                            in modern web technologies. I thrive on transforming ideas into functional, scalable digital
+                            experiences and take pride in writing clean, maintainable code that balances functionality
+                            with user appeal.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>My Journey</h3>
+                        <p>My journey in technology started with curiosity—exploring how things work behind the scenes.
+                            Over the years, I have honed my skills through academic projects, internships, and personal
+                            initiatives such as developing applications and working across diverse domains, from machine
+                            learning and IoT to data processing. Each step has strengthened my technical expertise and
+                            my ability to collaborate, think critically, and deliver results.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>What I Do</h3>
+                        <p>I specialize in designing, developing, and optimizing efficient, user-focused web
+                            applications. My core expertise includes software development with Java, database management
+                            with SQL, and deploying solutions in cloud environments. I aim to contribute to innovative
+                            projects where technology drives measurable impact and growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Mastering the full stack with modern technologies and best practices</p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Front-End Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend & Database</h3>
+                    <ul class="skill-list">
+                        <li>Java (Backend)</li>
+                        <li>JDBC</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🚀</div>
+                    <h3>Other Skills</h3>
+                    <ul class="skill-list">
+                        <li>Machine Learning</li>
+                        <li>OOPS</li>
+                        <li>Microsoft Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Showcasing innovative solutions and creative problem-solving</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-tag">AI/ML Project</div>
+                    <h3>AI Based Stress Prediction System</h3>
+                    <p>Developed an AI-Based Stress Prediction System using GSR and heart rate sensors to capture
+                        real-time physiological data.</p>
+                    <ul class="project-features">
+                        <li>Real-time physiological data processing</li>
+                        <li>ESP32 and ThingSpeak integration</li>
+                        <li>Web dashboard for live monitoring</li>
+                        <li>Personalized stress relief recommendations</li>
+                    </ul>
+                    <a href="stress-prediction.html" class="project-link"
+                        style="font-size: 1.5rem; text-decoration: none;">&#8599;</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Web Development</div>
+                    <h3>Weather Forecasting Application</h3>
+                    <p>Built a Weather Forecasting App that retrieves and displays real-time weather data using APIs.
+                    </p>
+                    <ul class="project-features">
+                        <li>Location-based forecasts</li>
+                        <li>Temperature and humidity display</li>
+                        <li>Intuitive user interface</li>
+                        <li>Real-time API integration</li>
+                    </ul>
+                    <a href="weather-app.html" class="project-link"
+                        style="font-size: 1.5rem; text-decoration: none;">&#8599;</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">IoT Project</div>
+                    <h3>Simple Clap Control Home Automation</h3>
+                    <p>Developed a Simple Clap-Control Home Automation system using sound detection circuitry to
+                        recognize specific clap patterns.</p>
+                    <ul class="project-features">
+                        <li>Relay-based switching mechanism</li>
+                        <li>Reliable hands-free operation</li>
+                        <li>Cost-effective solution</li>
+                        <li>Convenient home automation</li>
+                    </ul>
+                    <a href="home-automation.html" class="project-link"
+                        style="font-size: 1.5rem; text-decoration: none;">&#8599;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Background Video (Video 2) -->
+    <video class="global-bg-video" autoplay loop muted playsinline>
+        <source src="Black and Blue Neon Technology Video 2.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay" style="position: fixed; z-index: -4;"></div>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Professional certifications and achievements</p>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>JavaScript</h3>
+                    <p>Comprehensive training covering front-end and back-end technologies, including responsive design,
+                        API integration, and database management.</p>
+                    <a href="https://drive.google.com/file/d/1Rv925j_RgmuT0nZkD1b-9nUS0RHkI9xI/view?usp=drivesdk"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Introduction to Internet of Things</h3>
+                    <p>Hands-on experience in designing and implementing Internet of Things solutions, including sensor
+                        integration and data processing.</p>
+                    <a href="https://drive.google.com/file/d/1TtjUH57-D-qBLP-8-sRSSfnzthXUFOty/view?usp=drivesdk"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Honeywell Certificate</h3>
+                    <p>Fundamental understanding of cloud architecture, deployment models, and cloud services for
+                        scalable application development.</p>
+                    <a href="https://drive.google.com/file/d/1eUEDOvt4i6XOS5Ng-RfrEUdHVSyLLbM5/view?usp=drivesdk"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Rooman Certificate</h3>
+                    <p>In-depth certification focused on advanced Python concepts, data structures, algorithms, and
+                        efficient code optimization techniques.</p>
+                    <a href="https://drive.google.com/file/d/1MBuWPxCo5EPOdIoogc5yhDYdj9rlOswJ/view?usp=drivesdk"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Certificate for Skill Competency</h3>
+                    <p>Practical certification in building, training, and deploying machine learning models using
+                        popular frameworks and real-world datasets.</p>
+                    <a href="https://drive.google.com/file/d/1rMYiMFsQk5o95QkvhUi40ZL_3Az53qg_/view?usp=drivesdk"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Wadhwani Foundation Certificate</h3>
+                    <p>Enhanced soft skills and professional communication strategies essential for workplace success
+                        and career growth.</p>
+                    <a href="https://drive.google.com/file/d/1YrzG2V_khNX-XC8uwSuzNK_MLgyffqz2/view?usp=drivesdk"
+                        target="_blank" class="cert-link">View Certificate →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start a project or just want to chat? Let's connect!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:maheksultana152@gmail.com">maheksultana152@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+917795474533">+91 7795474533</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mahek-sultana-a51008280/" target="_blank"
+                            class="social-icon linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/mahek522" target="_blank" class="social-icon github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mahek Sultana. All rights reserved.</p>
+            <p>Made with ❤️ by Mahek Sultana</p>
+        </div>
+    </footer>
+</body>
+
+</html>
