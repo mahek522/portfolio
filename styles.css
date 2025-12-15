@@ -66,6 +66,14 @@ body {
     color: var(--color-light);
 }
 
+.desktop-logo {
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -656,14 +664,57 @@ body {
         padding: 0.5rem 0;
     }
 
-    .nav-logo {
-        font-size: 1.1rem;
+    /* Logo Toggling */
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-tertiary);
+        /* Make it stand out */
+        text-shadow: 0 0 5px var(--color-secondary);
+        border: 2px solid var(--color-tertiary);
+        /* Boxed style for 'MS' */
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .nav-container {
+        padding: 0 1.5rem;
+        /* Ensure space on sides */
+    }
+
+    /* Hamburger Visibility Fix */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+        /* Ensure above everything */
+        border: 1px solid var(--color-tertiary);
+        /* Outline to make it pop */
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.5);
+        /* Background to ensure contrast against video */
+    }
+
+    .bar {
+        background-color: var(--color-tertiary);
+        /* Neon Cyan */
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        display: block;
     }
 
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
+        /* Adjusted height */
         gap: 0;
         flex-direction: column;
         background: rgba(4, 12, 16, 0.98);
@@ -672,6 +723,7 @@ body {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        z-index: 1000;
     }
 
     .nav-menu.active {
